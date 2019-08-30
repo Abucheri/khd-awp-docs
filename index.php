@@ -1,3 +1,6 @@
+<?php 
+require 'Parsedown.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,42 +25,23 @@
 </head>
 <body>
 <?php 
-include_once 'Request.php';
-include_once 'router.php';
-$router = new Router(new Request);
-$router->get('/', function() {
-    echo "<div class='container'>
-    <div class='row'>
-    <div class='col-12 card'>
-    <div class='card-body'>";
-    require 'Parsedown.php';
-    $Parsedown = new Parsedown();
-    $myfile = fopen("documentation-main.md", "r") or die("Unable to open file!");
-    echo $Parsedown->text(fread($myfile,filesize("documentation-main.md")));
-    fclose($myfile);
-    echo "</div>
-    </div>
-    </div>
-    </div>";
-});
-$router->get('/admins', function($request) {
-    echo "<div class='container'>
-    <div class='row'>
-    <div class='col-12 card'>
-    <div class='card-body'>";
-    require 'Parsedown.php';
-    $Parsedown = new Parsedown();
-    $myfile = fopen("documentation-admin.md", "r") or die("Unable to open file!");
-    echo $Parsedown->text(fread($myfile,filesize("documentation-admin.md")));
-    fclose($myfile);
-    echo "</div>
-    </div>
-    </div>
-    </div>";
-});
-$router->post('/data', function($request) {
-  return json_encode($request->getBody());
-});
+function userecho(){
+echo "<div class='container'>
+<div class='row'>
+<div class='col-12 card'>
+<div class='card-body'>";
+$Parsedown = new Parsedown();
+$myfile = fopen("documentation_main.md", "r") or die("Unable to open file!");
+echo $Parsedown->text(fread($myfile,filesize("documentation_main.md")));
+fclose($myfile);
+echo "</div>
+</div>
+</div>
+</div>";
+}
+
+userecho();
+
 ?>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 

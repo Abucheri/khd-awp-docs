@@ -1,5 +1,5 @@
 <p align="center">
-<img src='./images/21e23bbd-61de-1a77-f99a-05490b700a03.webPlatform.png' height='100px'/>
+<img src='../images/21e23bbd-61de-1a77-f99a-05490b700a03.webPlatform.png' height='100px'/>
 </p>
 
 ## Kisumu Health Department Annual Work Plan 
@@ -8,7 +8,7 @@
 <br/>
 
 # Documentation for admins
-<small>For **users**, kindly refer to this <a href="./">documentation here.</a></small>
+<small>For **users**, kindly refer to this <a href="../">documentation here.</a></small>
 
 <br/>
 <hr class='hr_fancy'/>
@@ -103,7 +103,7 @@ Once the page or application has loaded, you will see a logging in form requesti
 your username or email and password. This form is similar to the the user form and can be used by both admins and users. When initialising the application,as an administrator the default username is **admin** and password is **admin** after which it should be changed immediately after logging in, in the settings page.
 <br/>
 <p align="center">
-<img src='./images/landing_page.jpg' alt='Landing Page' width='90%'></img>
+<img src='../images/landing_page.jpg' alt='Landing Page' width='90%'></img>
 <br/><small><i>Logging in page</i></small>
 </p>
 
@@ -128,7 +128,7 @@ The various colours used include the following:
 <b class='text-secondary'>&#9632; Expected</b> - An activity is expected to be completed in that quarter.
 
 <p align="center">
-<img src='./images/home_page_admin.jpg' alt='Admin Home page' width='90%'></img>
+<img src='../images/home_page_admin.jpg' alt='Admin Home page' width='90%'></img>
 <br/><small><i>Landing page showing the programs</i></small>
 </p>
 
@@ -156,7 +156,7 @@ The lastest changes made to each program is noted under each program to know whe
 ### Managing New Programs <span id="managing-new-programs"></span>
 
 <p align="center">
-<img src='./images/new_program.jpg' alt='New Programs' width='90%'></img>
+<img src='../images/new_program.jpg' alt='New Programs' width='90%'></img>
 <br/><small><i>Creating New Programs</i></small>
 </p>
 
@@ -186,7 +186,7 @@ Just tap on <span class="text-danger">Discard</span> button.
 
 To edit a program, just tap on the <span>Edit</span> at the right with an pencil icon. 
 <p align="center">
-<img src='./images/editing_programs.jpg' alt='Editing Programs' width='90%'></img>
+<img src='../images/editing_programs.jpg' alt='Editing Programs' width='90%'></img>
 <br/><small><i>Editing Programs</i></small>
 </p>
 
@@ -206,7 +206,7 @@ Evidences are sorted as per the year, where the current year and most latest yea
 
 If there is no evidence, a near red alert will be displayed informing you that no evidence has been uploaded yet.
 <p align="center">
-<img src='./images/evidences.jpg' alt='Evidences page' width='90%'></img>
+<img src='../images/evidences.jpg' alt='Evidences page' width='90%'></img>
 <br/><small><i>Viewing Uploaded Evidences</i></small>
 </p>
 
@@ -214,7 +214,7 @@ If there is no evidence, a near red alert will be displayed informing you that n
 Evidences can only be uploaded in the editing option of each program. Each activity has a <span class='text-primary'>Upload Evidence</span> link that opens up a dialog box that allows one to drag and drop evidence or just click on choose file to start the upload. After which closing the box automatically enables the edit feature of that activity so that you can now edit the status of that activity.
 
 <p align="center">
-<img src='./images/upload_evidence.jpg' alt='Evidences Upload Modal' width='90%'></img>
+<img src='../images/upload_evidence.jpg' alt='Evidences Upload Modal' width='90%'></img>
 <br/><small><i>Uploading Evidences Modal</i></small>
 </p>
 
@@ -229,7 +229,7 @@ The settings link located at the top of the navigation bar, with a gear icon.
 
 
 <p align="center">
-<img src='./images/setttings_admin.jpg' alt='Admin Settings page' width='90%'></img>
+<img src='../images/setttings_admin.jpg' alt='Admin Settings page' width='90%'></img>
 <br/><small><i>Admin settings page</i></small>
 </p>
 

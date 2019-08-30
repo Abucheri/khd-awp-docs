@@ -8,7 +8,7 @@
 <br/>
 
 # Documentation for users
-<small>For **admins**, kindly refer to this <a href="./admins">documentation here.</a></small>
+<small>For **admins**, kindly refer to this <a href="./admin">documentation here.</a></small>
 
 <br/>
 <hr class='hr_fancy'/>

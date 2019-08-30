@@ -1,3 +1,6 @@
+<?php 
+require '../Parsedown.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +15,7 @@
         margin:20px;
     }
     hr.hr_fancy{
-        background: url(images/separator.png) repeat-y;
+        background: url(../images/separator.png) repeat-y;
         height:2px;
         background-size: cover;
     
@@ -21,21 +24,26 @@
     </style>
 </head>
 <body>
-<div class='container'>
-<div class='row'>
-<div class='col-12 card'>
-<div class='card-body'>
 <?php
-require 'Parsedown.php';
-$Parsedown = new Parsedown();
-$myfile = fopen("documentation.md", "r") or die("Unable to open file!");
-echo $Parsedown->text(fread($myfile,filesize("documentation.md")));
-fclose($myfile);
+function adminecho(){
+    echo "<div class='container'>
+    <div class='row'>
+    <div class='col-12 card'>
+    <div class='card-body'>";
+    $Parsedown = new Parsedown();
+    $myfile = fopen("documentation_admin.md", "r") or die("Unable to open file!");
+    echo $Parsedown->text(fread($myfile,filesize("documentation_admin.md")));
+    fclose($myfile);
+    echo "</div>
+    </div>
+    </div>
+    </div>";
+}
+
+adminecho();
+
 ?>
-</div>
-</div>
-</div>
-</div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
